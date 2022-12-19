@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  
+  .App_users{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+  }
+  
+  .allUsers{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .usersData{
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    margin: 0.6rem;
+    border-radius: 5%;
+    padding: 2rem; 
+    }
+  
+  .userList {
+    width: 40rem;
+    background: url(https://img.freepik.com/vector-gratis/fondo-acuarela-abstracta_23-2149054089.jpg?w=2000);
+    padding: 2rem 2.5rem;
+  }
+  
+  .userButton{
+    background: none;
+    border: none;
+    padding: 1rem;  
+  }
+  
+  .newuser {
+
+    padding-top: 3rem;
+    font-family: fangsong;
+    font-weight: 900;
+    font-size: 40px;
+    color: plum;
+  }
+  
+  .usersControl{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .data{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;  
+   }
+  
+  .one{
+    width: 21.5rem; 
+  }
+  
+  .one1{
+    height: 1.5rem;
+    border-radius: 10%;
+    border: none;
+    background: rgb(246, 245, 241);
+    margin-left: 5px;
+  }
+  
+  .buttonFile{
+    width: 100px; 
+    margin:20px 151px;
+    height: 2rem ;
+    background: palevioletred;
+    border: none;
+    border-radius: 30%;
+  }
+  
+  
+  
