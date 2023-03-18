@@ -26,14 +26,14 @@ const UsersForm = ({getUsers, userselected, deselectusers}) => {
     const submit = (data) => {
 
         if (userselected) {
-          axios.put(`http://users-crud.academlo.tech/users/${userselected.id}/`, data)
+          axios.put(`http://localhost:8080/users/${userselected.id}/`, data)
             .then(() => {
               getUsers()
               deselectusers();
             })
             .catch((error) => console.log(error.response?.data));
         } else {
-          axios.post('http://users-crud.academlo.tech/users/', data)
+          axios.post('http://localhost:8080/users', data)
             .then(() => { getUsers(); })
             .catch(error => console.log(error.response?.data));
         }
@@ -82,7 +82,7 @@ const UsersForm = ({getUsers, userselected, deselectusers}) => {
             </div>
           </div>
   
-          <button  className="buttonFile">Enter</button>
+          <button  className="buttonFile" onClick={() => userselected(submit)}>Enter</button>
   
         </form>
   

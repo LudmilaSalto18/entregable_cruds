@@ -8,11 +8,11 @@ function App() {
   const [usersList, setUsersList] = useState([])
   const [userselected, setUserSelected] = useState (null)
   useEffect(() => {
-    axios.get("http://users-crud.academlo.tech/users/")
+    axios.get("http://localhost:8080/users")
       .then(res => setUsersList(res.data))
   }, []);
   const getUsers = () => {
-    axios.get('"http://users-crud.academlo.tech/users/"')
+    axios.get('http://localhost:8080/users')
       .then((res) => setUsersList(res.data))
   };
 
@@ -21,7 +21,7 @@ function App() {
   };
 
   const deleteUsers = (id)=>{
-    axios.delete (`"http://users-crud.academlo.tech/users/"${id}/`)
+    axios.delete (`http://localhost:8080/users/u${id}/`)
          .then(() => getUsers())
   }
 
